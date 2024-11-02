@@ -1,1 +1,8 @@
-# m1ndfr-portofolio-website
+# m1ndfr portofolio website
+---
+## Features ; </br>
+- **Responsive**
+- **Starfall Animated + Glow Effect**
+- **Clean design**</br>
+
+---
