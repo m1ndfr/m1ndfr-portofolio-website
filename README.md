@@ -6,5 +6,5 @@
 - **Clean design**</br>
 
 ## Deploy ; </br>
-- **a**
+- **https://m1ndfr.github.io/m1ndfr-portofolio-website/**
 ---
