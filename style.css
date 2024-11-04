@@ -38,7 +38,6 @@ body {
     opacity: 1;
     will-change: opacity, transform; 
     transition: opacity 0.5s ease-out;
-
 }
 
 .enter-text {
@@ -119,12 +118,42 @@ body {
     z-index: 1;
 }
 
+.profile-picture {
+    position: relative;
+    display: inline-block;
+}
+
 .profile-picture img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+}
+
+.status-bubble {
+    position: absolute;
+    top: -2px; 
+    right: -260px; 
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    white-space: nowrap; 
+}
+
+.status-bubble::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
 }
 
 .username {
@@ -233,6 +262,19 @@ body {
         height: 80px;
     }
 
+    .status-bubble {
+        top: -5px;
+        right: -160px; 
+        padding: 4px 8px;
+        font-size: 0.7em;
+    }
+
+    .status-bubble::before {
+        left: -4px;
+        width: 8px;
+        height: 8px;
+    }
+
     .username {
         font-size: 1.5em;
     }
@@ -293,5 +335,18 @@ body {
     .bottom-icons .donate-icon a img {
         width: 25px;
         height: 25px;
+    }
+
+    .status-bubble {
+        top: -2px;
+        right: -190px; 
+        padding: 3px 6px;
+        font-size: 0.6em;
+    }
+
+    .status-bubble::before {
+        left: -3px;
+        width: 6px;
+        height: 6px;
     }
 }
